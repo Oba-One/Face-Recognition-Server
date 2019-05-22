@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "script.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "",
@@ -14,13 +16,15 @@
     "clarifai": "^2.5.0",
     "cors": "^2.8.4",
     "express": "^4.16.2",
-    "knex": "^0.14.2",
+    "knex": "^0.14.3",
     "mysql": "^2.15.0",
-    "npm": "^6.0.1",
-    "pg": "^7.4.0"
+    "npm": "^6.6.0",
+    "pg": "^7.4.0",
+    "snyk": "^1.166.1"
   },
   "devDependencies": {
     "nodemon": "^1.12.7"
   },
-  "description": ""
+  "description": "",
+  "snyk": true
 }
